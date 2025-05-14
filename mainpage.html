@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto Mono', monospace;
+      background-color: #000;
+      color: #90ee90;
+    }
+
+    header {
+      background-color: #013220;
+      padding: 2rem;
+      text-align: center;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #cfcfcf;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .photo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .photo img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+      border: 3px solid #90ee90;
+      object-fit: cover;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      color: #7fff7f;
+      margin-bottom: 1rem;
+      border-left: 4px solid #90ee90;
+      padding-left: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+      color: #ccc;
+    }
+
+    .contact a {
+      color: #90ee90;
+      text-decoration: none;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #013220;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+
+    a:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>John Doe</h1>
+    <p>Computer Engineering Student | Backend & Security Enthusiast</p>
+  </header>
+
+  <div class="container">
+    <div class="photo">
+      <img src="yourphoto.jpg" alt="My Photo">
+    </div>
+
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I’m a passionate Computer Engineering student with a love for backend development and security. I build apps, websites, and enjoy working on low-level programming including Assembly. I’m currently a member of ICPep and love creating tech that helps others.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>💻 Java, Python, C, Assembly (EMU8086)</li>
+        <li>🌐 HTML, CSS, JavaScript</li>
+        <li>🛠 Backend Development (Node.js, MySQL)</li>
+        <li>🔒 Cybersecurity & Networking Basics</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Java GWA Calculator</strong> – Java app to compute grades with GUI</li>
+        <li><strong>8086 Sorter</strong> – Assembly program to sort characters alphabetically</li>
+        <li><strong>Student Portal</strong> – Full-stack student info system (HTML, CSS, Node.js)</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <ul>
+        <li>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></li>
+        <li>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 John Doe. All rights reserved.
+  </div>
+
+</body>
+</html>
