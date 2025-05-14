@@ -11,7 +11,7 @@ body {
   color: #013220;
 }
 
-/* Green top header */
+/* header */
 .hero {
   background-color: #013220;
   color: white;
@@ -29,7 +29,7 @@ body {
   align-items: center;
   justify-content: space-around;
   padding: 2rem;
-  width: 80%;
+  width: 60%;
   flex-wrap: wrap;
   background-color: #fff;
   color: #013220;
@@ -54,12 +54,22 @@ body {
 .intro-photo img {
   width: 200px;
   height: 200px;
+  margin: 10px;
   border-radius: 100%;
   border: 3px solid #013220;
   object-fit: cover;
 }
 
-/* Main content */
+.divider {
+  border: none;
+  height: 3px;
+  border-radius: 30%;
+  background-color: #006400;
+  margin: 20px 0;
+  width: 60%;
+}
+
+/* Main Content */
 .container {
   max-width: 1000px;
   margin: auto;
@@ -88,6 +98,48 @@ ul li {
   color: #444;
 }
 
+/* Education */
+.education {
+  margin-top: 2rem;
+  width: 90%;
+  justify-content: center;
+}
+
+.education-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+.education-left {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.education-left h3 {
+  color: #013220;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.education-left p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.education-right {
+  text-align: right;
+  flex: 0 0 200px;
+}
+
+.education-right p {
+  font-size: 1rem;
+  color: #3a3a3a;
+}
+
 /* Links */
 a {
   color: #006400;
@@ -106,3 +158,130 @@ a:hover {
   color: #ccc;
   font-size: 0.9rem;
 }
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 50, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  background-color: #cce5cc;
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1rem;
+}
+
+.project-info h3 {
+  color: #013220;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-info p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.project-image-circle {
+  width: 160px;
+  height: 160px;
+  margin: 1rem auto 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #013220;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-info {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Contact */
+.contact ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.contact ul li {
+  margin-bottom: 10px;
+  padding: 8px 0;
+}
+
+.contact-divider {
+  border: none;
+  border-top: 1px solid #006400;
+  margin: 0;
+  width: 50%;
+  margin-left: 0;
+  margin-right: 0;
+  display: block;
+  margin-top: 5px;
+}
+
+.contact a {
+  color: #006400;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #013220;
+}
+
+
+/* Quote Part */
+.quote-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.quote {
+  font-style: italic;
+  color: #2e4d2a;
+  font-size: 1rem;
+  font-size: 20px;  
+  margin: 0;
+}
+
+.quote-attribution {
+  color: #2e4d2a; 
+  font-size: 0.75rem;  
+  margin-top: 0.5rem;
+  font-style: italic;
+  margin-top: -1px;
+  padding-bottom: 50px;
+}
+
+
+
